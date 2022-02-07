@@ -1,12 +1,10 @@
 import React from "react"
 import styled from "styled-components"
-import { FiFacebook } from "react-icons/fi"
-import { HiOutlineMail } from "react-icons/hi"
-import { FiInstagram } from "react-icons/fi"
 import { FaPython } from "react-icons/fa"
 import Card from "../Card"
 import ListContactIcons from "../ListContactIcons"
 import { ABOUT_ME, JOB } from "../../constants"
+import { SiMicrosoftoffice } from "react-icons/si"
 
 const ContentWrapper = styled.div`
   width: 60%;
@@ -115,6 +113,11 @@ const Content = () => {
             <li>
               <Card>
                 <FaPython />
+              </Card>
+            </li>
+            <li>
+              <Card>
+                <SiMicrosoftoffice />
               </Card>
             </li>
           </ul>
