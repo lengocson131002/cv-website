@@ -35,8 +35,8 @@ const Resume = () => {
           <ResumeTabs activeTab={tab} handleChangeTab={handleChangeTab} />
 
           {tab === 1 && <Education />}
-          {tab === 2 && <PersonalSkills />}
-          {tab === 3 && <Experience />}
+          {tab === 2 && <Experience />}
+          {tab === 3 && <PersonalSkills />}
         </ResumeContainer>
       </SectionWrapper>
     </Container>

@@ -7,7 +7,7 @@ import { ABOUT_ME, JOB } from "../../constants"
 import { SiMicrosoftoffice } from "react-icons/si"
 
 const ContentWrapper = styled.div`
-  width: 60%;
+  width: 58%;
   height: 100%;
   padding: 0 10rem;
 

@@ -1,9 +1,8 @@
 import React from "react"
 import styled from "styled-components"
 import Card from "../Card"
-import avt from "../../asset/profile_picture.png"
 import ListContactIcons from "../ListContactIcons"
-import { JOB } from "../../constants"
+import { avt, JOB } from "../../constants"
 import { contacts } from "../../constants"
 const Block = styled.div`
   display: flex;
@@ -23,12 +22,19 @@ const Block = styled.div`
     overflow: hidden;
     border-radius: inherit;
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
 
     & img {
       transition: all 0.3s;
-      width: 100%;
+      width: 60%;
       height: 100%;
       object-fit: cover;
+
+      @media(max-width: 768px) {
+        width: 100%;
+      }
     }
 
     &:hover img {
@@ -48,6 +54,8 @@ const Block = styled.div`
       display: block;
       font-size: 2rem;
       color: ${({ theme }) => theme.color.primary};
+      margin-bottom: 3rem;
+      text-transform: uppercase;
     }
 
     .contact-description {
@@ -99,9 +107,6 @@ const ContactBlock = () => {
       <div className="contact-content">
         <h3 className="contact-name">LE THI HOA</h3>
         <span className="contact-position">{JOB}</span>
-        <p className="contact-description">
-          I am available for freelance work. Connect with me via and call in to my account.
-        </p>
         <p className="contact-phone">
           Phone: <span>+0372066464</span>
         </p>

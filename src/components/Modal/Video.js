@@ -16,7 +16,7 @@ const VideoWrapper = styled.div`
 const Video = ({ path, caption }) => {
   return (
     <VideoWrapper>
-      <video autoplay muted controls>
+      <video autoPlay muted controls>
         <source src={path} type="video/mp4" />
         <source src={path} type="video/ogg" />
         Your browser does not support HTML video.

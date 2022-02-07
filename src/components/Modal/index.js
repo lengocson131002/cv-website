@@ -95,9 +95,10 @@ const Modal = ({ children }) => {
   const { project } = context;
 
 
+
   return (
-    <ModalOverLay isOpen={context.isOpen}>
-      <ModalWrapper>
+    <ModalOverLay isOpen={context.isOpen} onClick={closeModal}>
+      <ModalWrapper onClick={(e) => { e.stopPropagation() }}>
         <ProjectName>{project.name}</ProjectName>
         <ProjectDescription>{project.description}</ProjectDescription>
         {

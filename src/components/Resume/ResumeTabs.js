@@ -49,10 +49,10 @@ const ResumeTabs = ({ activeTab = 1, handleChangeTab }) => {
         Education
       </Tab>
       <Tab onClick={() => handleChangeTab(2)} className={activeTab === 2 ? "active" : ""}>
-        Personal Skill
+        Experiences
       </Tab>
       <Tab onClick={() => handleChangeTab(3)} className={activeTab === 3 ? "active" : ""}>
-        Experience
+        Personal Skills
       </Tab>
     </Tabs>
   )

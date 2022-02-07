@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import Card from "../Card"
-import avt from "../../asset/profile_picture.png"
+import avt from "../../asset/avt.png"
 
 const PictureWrapper = styled(Card)`
   width: 50rem;

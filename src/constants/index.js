@@ -20,8 +20,11 @@ import l002 from '../asset/livestreamChatBot/002.png';
 import l003 from '../asset/livestreamChatBot/003.png';
 import lProfile from '../asset/livestreamChatBot/profile.jpg';
 
+import avt from '../asset/avt.png';
 
-// Emaill
+export { avt as avt };
+
+// Email
 export const contacts = {
   EMAIL: "hoale1607@gmail.com",
   ADDRESS: "Ho Chi Minh City",
@@ -38,7 +41,7 @@ export const nav_items = {
 }
 
 export const ABOUT_ME = "Being a Project assistant and pursuing to become a Business analyst I am an enthusiastic, self-motivated, reliable, responsible and hard working person. I am a mature team worker and adaptable to all challenging situations";
-export const JOB = "a Project Assistant."
+export const JOB = "a Project Assistant"
 export const links = {
   FACEBOOK: "",
   GMAIL: "",
@@ -129,7 +132,7 @@ export const personalSkills = {
     },
     {
       name: "Others",
-      description: "Experience in UI/UX design with Figma. \nKnowledge in developing test plan and relate others"
+      description: "Experience in UI/UX design with Figma. \nKnowledge in developing test plan"
     },
 
   ],
@@ -140,7 +143,7 @@ export const personalSkills = {
       subSkills: [
         {
           name: "Speaking, Listening",
-          level: 80
+          level: 70
         },
         {
           name: "Writing, Reading",
@@ -177,7 +180,7 @@ export const projects = [
   },
   {
     name: "Proposal",
-    description: "Working closely with Account Team, market research Team to write a research proposal to clarify client objectives and key ideas \nEstimating resources, timeline for project",
+    description: "Working closely with Account Team, market research Team to write a research proposal to clarify client objectives and key ideas \nEstimating resources, timeline for projects",
     profile: bid,
     field: "Proposal",
     imgs: [
