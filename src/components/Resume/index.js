@@ -29,7 +29,7 @@ const Resume = () => {
   return (
     <Container>
       <SectionWrapper id="resume">
-        <SubSectionHeader center>2+ Year Experience</SubSectionHeader>
+        <SubSectionHeader center>1+ Year Experience</SubSectionHeader>
         <SectionHeader center>My Resume</SectionHeader>
         <ResumeContainer>
           <ResumeTabs activeTab={tab} handleChangeTab={handleChangeTab} />
