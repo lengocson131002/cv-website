@@ -11,12 +11,20 @@ const Wrapper = styled.div`
 
 const PersonalSkills = () => {
 
-  const { skills, languages } = personalSkills;
+  const { technicalSkills, softSkills, languages } = personalSkills;
 
   return (
     <Wrapper>
-      <SkillSection header="Skills">
-        {skills && skills.map(skill => (
+      <SkillSection header="Technical skills">
+        {technicalSkills && technicalSkills.map(skill => (
+          <Skill
+            key={uuid()}
+            name={skill.name}
+            description={skill.description} />
+        ))}
+      </SkillSection>
+      <SkillSection header="Soft skills">
+        {softSkills && softSkills.map(skill => (
           <Skill
             key={uuid()}
             name={skill.name}

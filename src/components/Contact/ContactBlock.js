@@ -16,6 +16,11 @@ const Block = styled.div`
   border-radius: 10px;
   margin: 0 auto;
 
+  @media (max-width: 768px) {
+      height: 35rem;
+      padding: 2rem;
+  }
+
   box-shadow: ${({ theme }) => theme.shadow.shadow_1};
 
   .contact-image {
@@ -25,6 +30,7 @@ const Block = styled.div`
     display: flex;
     justify-content: center;
     align-items: end;
+
 
     & img {
       transition: all 0.3s;

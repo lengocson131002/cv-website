@@ -16,11 +16,14 @@ const ContentWrapper = styled.div`
     padding: 3rem 5rem 0 5rem;
   }
 
+
   .subtitle {
     font-size: 1.4rem;
     text-transform: uppercase;
     font-weight: 300;
     margin-bottom: 2rem;
+
+
   }
 
   
@@ -29,6 +32,11 @@ const ContentWrapper = styled.div`
     font-size: 5rem;
     letter-spacing: -1px;
     color: #fff;
+
+    @media (max-width: 992px) {
+      font-size: 4.5rem;
+    }
+  
 
     & > span {
       color: ${({ theme }) => theme.color.primary};
@@ -41,6 +49,10 @@ const ContentWrapper = styled.div`
     font-weight: 500;
     color: #fff;
     margin-bottom: 4rem;
+
+    @media (max-width: 992px) {
+      font-size: 4rem;
+    }
   }
   .description {
     font-size: 1.6rem;

@@ -105,7 +105,26 @@ export const experiment = [
 ]
 
 export const personalSkills = {
-  skills: [
+  technicalSkills: [
+    {
+      name: "Task management",
+      description: "Product backlog Management with Azure"
+    },
+    {
+      name: "Design",
+      description: "Experience with Figma"
+    },
+    {
+      name: "Programming Languages",
+      description: "Experience working on Python"
+    },
+    {
+      name: "Database",
+      description: "Basic knowledge about database (MySQL, PostgreSQL)"
+    },
+  ],
+
+  softSkills: [
     {
       name: "Prioritization skills",
       description: "Experience in managing product backlog and prioritize important features, define and measure product success metrics"
@@ -132,7 +151,7 @@ export const personalSkills = {
     },
     {
       name: "Others",
-      description: "Experience in UI/UX design with Figma. \nKnowledge in developing test plan"
+      description: "Knowledge in developing test plan"
     },
 
   ],

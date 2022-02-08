@@ -9,7 +9,7 @@ const PictureWrapper = styled(Card)`
   position: relative;
 
   @media (max-width: 1200px) {
-    margin-top: 4rem;
+    margin-top: 8rem;
   }
 
   & img {

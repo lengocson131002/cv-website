@@ -14,6 +14,11 @@ const NavWrapper = styled.ul`
     padding: 0.5rem 2rem;
     transition: all 0.3s;
 
+    @media (max-width: 768px) {
+      padding: 0.5rem 1rem;
+    }
+  
+
     &::before {
       content: "";
       position: absolute;
