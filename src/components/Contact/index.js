@@ -4,9 +4,7 @@ import SectionHeader from "../SectionHeader"
 import SectionWrapper from "../SectionWrapper"
 import SubSectionHeader from "../SubSectionHeader"
 import ContactBlock from "./ContactBlock"
-import ListContactIcons from "../ListContactIcons"
 import styled from "styled-components"
-import Card from "../Card"
 
 const ContactContent = styled.div`
   display: flex;

@@ -1,4 +1,4 @@
-import React, { useEffect, useLayoutEffect } from "react"
+import React, { useLayoutEffect } from "react"
 import { useState } from "react/cjs/react.development"
 import styled from "styled-components"
 import { nav_items } from "../../constants"
