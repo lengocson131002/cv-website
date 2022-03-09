@@ -1,8 +1,11 @@
-import React from "react"
+import React, { useEffect } from "react"
 import styled from "styled-components"
 import ProjectBlock from "./ProjectBlock"
 import { projects } from "../../constants"
 import { v4 as uuid } from 'uuid';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const ListWrapper = styled.div`
   display: grid;
   row-gap: 5rem;
@@ -12,8 +15,15 @@ const ListWrapper = styled.div`
 `
 
 const ListProjects = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 500
+    });
+  }, [])
+
   return (
-    <ListWrapper>
+    <ListWrapper data-aos="fade-up">
       {
         projects.map(prj => (
           <ProjectBlock

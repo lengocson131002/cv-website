@@ -17,6 +17,7 @@ const GlobalStyles = createGlobalStyle`
         position: relative;
         color: ${({ theme }) => theme.color.text_dark};
         background: ${({ theme }) => theme.color.background};
+        overflow-x: hidden;
     }
 
     img {

@@ -1,9 +1,11 @@
-import React from "react"
+import React, { useEffect } from "react"
 import styled from "styled-components"
 import Card from "../Card"
 import ListContactIcons from "../ListContactIcons"
 import { avt, JOB } from "../../constants"
 import { contacts } from "../../constants"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Block = styled.div`
   display: flex;
   gap: 3rem;
@@ -105,8 +107,15 @@ const Block = styled.div`
 `
 
 const ContactBlock = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 500
+    });
+  }, [])
+
   return (
-    <Block>
+    <Block data-aos="flip-left">
       <Card className="contact-image">
         <img src={avt} alt="" />
       </Card>

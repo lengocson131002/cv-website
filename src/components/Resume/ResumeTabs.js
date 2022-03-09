@@ -1,5 +1,7 @@
-import React from "react"
+import React, { useEffect } from "react"
 import styled from "styled-components"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Tabs = styled.ul`
   list-style: none;
@@ -43,8 +45,15 @@ const Tab = styled.li`
 `
 
 const ResumeTabs = ({ activeTab = 1, handleChangeTab }) => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 500
+    })
+  }, []);
+
   return (
-    <Tabs>
+    <Tabs data-aos="fade-right" >
       <Tab onClick={() => handleChangeTab(1)} className={activeTab === 1 ? "active" : ""}>
         Education
       </Tab>

@@ -59,6 +59,7 @@ export const education = [
 export const experiment = [
   {
     organization: "Truong Minh Thinh Technology Join Stock Company",
+    subtitle: "Working directly with team AI in NLP Chatbot, machine learning, CV, Auto speech Recognition projects",
     time: "Jan 2021 - now",
     position: "Project Assistant/BA",
     descriptions: [

@@ -1,7 +1,9 @@
-import React from "react"
+import React, { useEffect } from "react"
 import styled from "styled-components"
 import Card from "../Card"
 import avt from "../../asset/avt.png"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const PictureWrapper = styled(Card)`
   width: 50rem;
@@ -21,8 +23,16 @@ const PictureWrapper = styled(Card)`
 `
 
 const ProfilePicture = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 500
+    });
+  }, []);
+
+
   return (
-    <PictureWrapper>
+    <PictureWrapper data-aos="fade-left">
       <img src={avt} />
     </PictureWrapper>
   )

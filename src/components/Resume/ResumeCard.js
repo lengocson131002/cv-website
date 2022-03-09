@@ -79,13 +79,14 @@ const ResumeCardStyled = styled.div`
   }
 `
 
-const ResumeCard = ({ position, organization, time, descriptions }) => {
+const ResumeCard = ({ position, organization, time, descriptions, subtitle }) => {
   return (
     <ResumeCardStyled>
       <Card>
         <h2 className="position">{position}</h2>
         <span className="organization">{organization}</span>
         <span className="time">({time})</span>
+        {subtitle && <span className="organization">{subtitle}</span>}
         {
           descriptions &&
           <ul className="descriptions">

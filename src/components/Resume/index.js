@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import styled from "styled-components"
 import Container from "../Container"
 import SectionHeader from "../SectionHeader"
@@ -8,6 +8,7 @@ import Education from "./Education"
 import Experience from "./Experience"
 import PersonalSkills from "./PersonalSkills"
 import ResumeTabs from "./ResumeTabs"
+
 
 const ResumeContainer = styled.div`
   display: flex;
@@ -26,6 +27,7 @@ const Resume = () => {
     setTab(tab)
   }
 
+
   return (
     <Container>
       <SectionWrapper id="resume">
@@ -34,9 +36,9 @@ const Resume = () => {
         <ResumeContainer>
           <ResumeTabs activeTab={tab} handleChangeTab={handleChangeTab} />
 
-          {tab === 1 && <Education />}
-          {tab === 2 && <Experience />}
-          {tab === 3 && <PersonalSkills />}
+          {tab === 1 && <Education data-aos="fade-right" />}
+          {tab === 2 && <Experience data-aos="fade-right" />}
+          {tab === 3 && <PersonalSkills data-aos="fade-right" />}
         </ResumeContainer>
       </SectionWrapper>
     </Container>

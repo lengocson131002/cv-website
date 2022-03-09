@@ -1,10 +1,12 @@
-import React from "react"
+import React, { useEffect } from "react"
 import styled from "styled-components"
 import { FaPython } from "react-icons/fa"
 import Card from "../Card"
 import ListContactIcons from "../ListContactIcons"
 import { ABOUT_ME, JOB } from "../../constants"
 import { SiMicrosoftoffice } from "react-icons/si"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const ContentWrapper = styled.div`
   width: 58%;
@@ -102,8 +104,15 @@ const ContentWrapper = styled.div`
 `
 
 const Content = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 500
+    });
+  }, []);
+
   return (
-    <ContentWrapper>
+    <ContentWrapper data-aos="fade-right">
       <div className="top">
         <p className="subtitle">Welcome to my website</p>
         <h1>
