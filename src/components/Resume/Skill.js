@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import ProgressBar from "./ProgressBar";
+import { v4 as uuid } from 'uuid'
 
 const SkillWrapper = styled.div`
   margin-bottom: 2rem;
@@ -26,7 +27,7 @@ const Skill = ({ name, description, subSkills }) => {
       <p>{description}</p>
       {subSkills && (
         subSkills.map(skill => (
-          <ProgressBar name={skill.name} value={skill.level} />
+          <ProgressBar key={uuid()} name={skill.name} value={skill.level} />
         ))
       )}
     </SkillWrapper>

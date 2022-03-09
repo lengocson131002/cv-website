@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import Card from "../Card"
+import { v4 as uuid } from 'uuid'
 
 const Section = styled(Card)`
   border-radius: 10px;
