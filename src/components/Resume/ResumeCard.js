@@ -6,7 +6,7 @@ const ResumeCardStyled = styled.div`
   position: relative;
 
   ${Card} {
-    width: 100%;
+    width: 95%;
     margin-left: 4rem;
     padding: 4rem;
   }
