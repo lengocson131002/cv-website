@@ -8,6 +8,7 @@ import { SiMicrosoftoffice } from "react-icons/si"
 import AOS from "aos"
 import "aos/dist/aos.css"
 import wfLogo from "../../asset/wireframe.png"
+import { CgFigma } from "react-icons/cg"
 
 const ContentWrapper = styled.div`
     width: 58%;
@@ -117,7 +118,7 @@ const Content = () => {
             <div className="top">
                 <p className="subtitle"> Welcome to my website </p>
                 <h1>
-                    Hi, I 'm <span> Hoa(Tina)</span>
+                    Hi, I'm <span> Hoa(Tina)</span>
                 </h1>
                 <span className="job"> {JOB} </span> <p className="description"> {ABOUT_ME} </p>
             </div>
@@ -141,8 +142,7 @@ const Content = () => {
                         </li>
                         <li>
                             <Card>
-                                {/* <span className="wireframe">Wireframe</span> */}
-                                <img className="wireframe" src={wfLogo} alt="" />
+                                <CgFigma />
                             </Card>
                         </li>
                     </ul>
