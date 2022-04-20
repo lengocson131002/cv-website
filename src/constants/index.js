@@ -53,6 +53,11 @@ export const education = [
         organization: "Ho Chi Minh City University of Education",
         time: "2017 - 2021",
         major: "Business English"
+    },
+    {
+        organization: "True Skill Center (2022)",
+        time: "2022",
+        major: "Business Analyst Certification "
     }
 ]
 
