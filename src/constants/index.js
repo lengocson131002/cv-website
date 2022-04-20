@@ -55,7 +55,7 @@ export const education = [
         major: "Business English"
     },
     {
-        organization: "True Skill Center (2022)",
+        organization: "True Skill Center",
         time: "2022",
         major: "Business Analyst Certification "
     }
